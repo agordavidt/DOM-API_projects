@@ -1,4 +1,4 @@
-let apiKey = "e4d0e9921d4348feb7848f7ad7df803d";
+let apiKey = "";
 
 // https://newsapi.org/v2/everything?q=tesla&from=2024-05-27&sortBy=publishedAt&apiKey=e4d0e9921d4348feb7848f7ad7df803d
 // API Used: http://newsapi.org/s/india-news-api
