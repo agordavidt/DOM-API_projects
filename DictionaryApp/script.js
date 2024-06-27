@@ -17,7 +17,7 @@ btn.addEventListener('click', () => {
                 console.log(data);
                 result.innerHTML = `
                  <div class="word">
-                <h3>${inpWord}</h3>
+                <h3>${inpWord.toLowerCase()}</h3>
                 <button>
                     <i class="fas fa-volume-up"></i>
                 </button>
@@ -28,11 +28,13 @@ btn.addEventListener('click', () => {
                 <p>${data[0].phonetic}</p>
             </div>
             <p class="word-meaning">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, exercitationem?
+                ${data[0].meanings[0].definitions[0].definition}                
             </p>
             <p class="word-example">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ex!
+                ${data[0].meanings[0].definitions[0].example || ""}
             </p>
-                `
+                `;
+
+                
             });
 })
