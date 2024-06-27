@@ -1,5 +1,5 @@
 # Dictionary Search App
-/usr/bin/bash: line 1: wq: command not found
+
 ![App Interface](images/app-interface.png)
 
 ## Description
