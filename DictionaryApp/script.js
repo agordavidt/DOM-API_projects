@@ -36,11 +36,11 @@ btn.addEventListener('click', () => {
             </p>
                 `;
 
-                // sound.setAttribute("src", `https:${data[0].phonetics[1].audio}`);            
+                sound.setAttribute("src", `${data[0].phonetics[0].audio || data[0].phonetics[1].audio || data[0].phonetics[2].audio || data[0].phonetics[3].audio || data[0].phonetics[4].audio || data[0].phonetics[5].audio}`);       
             });
 });
 
-sound.setAttribute("src", "https://api.dictionaryapi.dev/media/pronunciations/en/home-us.mp3");
+// sound.setAttribute("src", `${data[0].phonetics[1].audio}`);
 function playSound(){
     sound.play();
 }
