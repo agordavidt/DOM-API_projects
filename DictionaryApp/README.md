@@ -1,4 +1,4 @@
-# Dictionary Search App
+# Dictionary App
 
 ![App Interface](images/app-interface.png)
 
