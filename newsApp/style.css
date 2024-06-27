@@ -1,0 +1,56 @@
+:root {
+    --primary-text: #333333;
+    --secondary-text: #666666;
+    --headlines: #003366;
+    --background: #FFFFFF;
+    --section-background: #F5F5F5;
+    --links-accents: #D32F2F;
+    --buttons-highlights: #FFA726;
+    --notifications-alerts: #FF5252;
+    --font-size-body: 16px;
+    --font-size-h1: 32px;
+    --font-size-h2: 28px;
+    --font-size-h3: 24px;
+    --font-size-h4: 20px;
+    --font-size-small: 14px;
+    --font-size-button: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--primary-text);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-body);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    color: var(--headlines);
+}
+
+section {
+    background-color: var(--section-background);
+}
+
+a {
+    text-decoration: none;
+    color: var(--links-accents);
+}
+
+button {
+    background-color: var(--buttons-highlights);
+    color: var(--background);
+}
+
+.alert {
+    background-color: var(--notifications-alerts);
+    color: var(--background);
+}
