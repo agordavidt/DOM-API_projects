@@ -44,3 +44,16 @@ btn.addEventListener('click', () => {
 function playSound(){
     sound.play();
 }
+// Additional tasks
+// Add other prepositions
+// Add examples for all prepostions
+// number examples
+// make the audio play be based on the preposition
+// enter on input focus should trigger button
+const input = document.getElementById('input-word');
+input.addEventListener('keydown', function(event) {    
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        btn.click();
+    }
+});
