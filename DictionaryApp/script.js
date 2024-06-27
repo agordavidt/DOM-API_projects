@@ -31,15 +31,16 @@ btn.addEventListener('click', () => {
                 ${data[0].meanings[0].definitions[0].definition}                
             </p>
             <p class="word-example">
-                ${data[0].meanings[0].definitions[0].example || ""}
+                ${data[0].meanings[0].definitions[0].example || ""}</br>
+                ${data[0].meanings[0].definitions[1].example || ""}
             </p>
                 `;
 
-                sound.setAttribute("src", `https:${data[0].phonetics[0].audio}`);
-                console.log(sound);
+                // sound.setAttribute("src", `https:${data[0].phonetics[1].audio}`);            
             });
 });
 
+sound.setAttribute("src", "https://api.dictionaryapi.dev/media/pronunciations/en/home-us.mp3");
 function playSound(){
     sound.play();
 }
