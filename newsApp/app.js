@@ -38,11 +38,22 @@ const generateUI = (articles) => {
 };
 
 // News API Call
-const getNews = async () = {
+const getNews = async () => {
     container.innerHTML = "";
     let response = await fetch(requestURL);
     if(!response.ok){
-        alert
+        alert("Data unavailable at the moment. Please try again letar");
+        return false;
+    }
+    let data = await response.json();
+    generateUI(data.articles);
+};
+
+// Category Selection
+const selectCategory = (e.category) => {
+    let options = document.querySelectorAll(".option");
+    options.forEach(element) => {
+        element.classList.remove("active")
     }
 }
 
