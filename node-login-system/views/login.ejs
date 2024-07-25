@@ -13,7 +13,8 @@
 <body>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-6 mx-auto">
+            <div class="col-md-6 mx-auto border p-5">
+                <h3 class="heading text-center">Login</h3>
                     <form action="/login" method="post">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Username</label>
@@ -23,9 +24,9 @@
                     <label for="exampleInputPassword1" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password" name="password" required>
                 </div>                
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-secondary w-100">Login</button>
         </form>
-                <div class="form-text">Dont't have an account?<a href="/signup">Signup</a></div>
+                <div class="form-text mt-3">Dont't have an account?<a href="/signup">Signup</a></div>
             </div>
         </div>
         
