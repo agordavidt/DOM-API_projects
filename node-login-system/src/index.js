@@ -9,6 +9,12 @@ const app = express();
 //use EJS as the view engine
 app.set('view engine', 'ejs');
 
+
+// use static file
+app.use(express.static("public"));
+
+app.use(express.static("node_modules/bootstrap/dist/css/"));
+
 app.get("/", (req, res) => {
     res.render("login");
 });
